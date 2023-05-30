@@ -1,0 +1,18 @@
+<h1>Advanced Concepts</h1>
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div [@spoonAnimation]="spoons.length">
+                        <ul *ngFor="let spoon of spoons">
+                            <li class="spoon-block d-flex justify-content-center">{{spoon.name}}</li>
+                        </ul>
+                    </div>
+                    <app-fade-block></app-fade-block>
+                    <hr>
+                    <button class="btn btn-primary mx-ato" (click)="showSpoons()">Show Spoons</button>
+
+                    <button class="btn btn-primary mx-ato" (click)="showMoreSpoons()">Show Nore Spoons</button>
+
+                </div>
+            </div>
+        </div>

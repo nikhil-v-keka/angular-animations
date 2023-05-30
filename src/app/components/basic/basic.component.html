@@ -1,0 +1,18 @@
+<h3>Basic Animations</h3>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-5">
+            <div class="btn-group-vertical btn-block">
+                <a  class="btn btn-primary active" (click)="setState('original')">Return to original</a>
+                <a  class="btn btn-primary" (click)="setState('basic')">Animation</a>
+                <a  class="btn btn-primary" (click)="setState('delay')">Animation with delay</a>
+                <a  class="btn btn-primary" (click)="setState('ease')">Animation with ease</a>
+                <a  class="btn btn-primary" (click)="setState('stepped')">Animation with Stapped</a>
+                <a  class="btn btn-primary" (click)="setState('parallel')">Parallel Animation</a>
+            </div>
+        </div>
+        <div class="col-7">
+            <app-anim-box [currentState]="switchState"></app-anim-box>
+        </div>
+    </div>
+</div>
